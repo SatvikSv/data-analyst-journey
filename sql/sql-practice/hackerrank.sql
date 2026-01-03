@@ -30,3 +30,66 @@ SELECT DISTINCT CITY FROM STATION station WHERE MOD(id,2) = 0;
 
 -- 9th
 SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;
+
+-- https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+
+-- 10th
+
+-- 11th
+SELECT City
+FROM Station
+WHERE City LIKE 'A%' or City LIKE 'E%' or City LIKE 'I%' or City LIKE 'O%' or City LIKE 'U%';
+
+-- 12th
+SELECT DISTINCT City
+FROM Station
+WHERE City LIKE '%A' or City LIKE '%E' or City LIKE '%I' or City LIKE '%O' or City LIKE '%U';
+
+-- 13th
+SELECT City
+FROM Station
+WHERE (City LIKE 'A%' or City LIKE 'E%' or City LIKE 'I%' or City LIKE 'O%' or City LIKE 'U%') 
+AND 
+(City LIKE '%A' or City LIKE '%E' or City LIKE '%I' or City LIKE '%O' or City LIKE '%U');
+
+-- 14th
+SELECT DISTINCT City
+FROM Station
+WHERE City NOT LIKE 'A%' AND City NOT LIKE 'E%' AND City NOT LIKE 'I%' AND City NOT LIKE 'O%' AND City NOT LIKE 'U%';
+
+-- 15th
+SELECT DISTINCT City
+FROM Station
+WHERE City NOT LIKE '%A' AND City NOT LIKE '%E' AND City NOT LIKE '%I' AND City NOT LIKE '%O' AND City NOT LIKE '%U';
+
+-- 16th
+SELECT Distinct City
+FROM Station
+WHERE (City NOT LIKE 'A%' AND City NOT LIKE 'E%' AND City NOT LIKE 'I%' AND City NOT LIKE 'O%' AND City NOT LIKE 'U%') 
+OR 
+(City NOT LIKE '%A' AND City NOT LIKE '%E' AND City NOT LIKE '%I' AND City NOT LIKE '%O' AND City NOT LIKE '%U');
+
+-- 17th
+SELECT Distinct City
+FROM Station
+WHERE (City NOT LIKE 'A%' AND City NOT LIKE 'E%' AND City NOT LIKE 'I%' AND City NOT LIKE 'O%' AND City NOT LIKE 'U%') 
+AND 
+(City NOT LIKE '%A' AND City NOT LIKE '%E' AND City NOT LIKE '%I' AND City NOT LIKE '%O' AND City NOT LIKE '%U');
+
+
+-- NEW TABLE STUDENTS
+-- 18th
+SELECT Name FROM Students 
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID;
+
+
+-- NEW TABLE EMPLOYEE
+-- 19th
+SELECT name FROM Employee 
+ORDER BY name;
+
+-- 20th
+SELECT name FROM Employee
+WHERE months < 10 AND salary > 2000
+ORDER BY employee_id;
