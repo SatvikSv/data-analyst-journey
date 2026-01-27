@@ -1,0 +1,16 @@
+Video 1 -- Installation & Basic First Visualisation
+
+Video 2 -- Use of Power Query
+
+Video 3 -- Relationships in PowerBI
+
+(Measure - Create Measure) 
+
+To create a relationship in PowerBI drag columns to the column where the relationship is to be established
+
+Video 4 -- PowerBI DAX (Data Analysis Expression)
+
+Use of Measure
+
+
+
