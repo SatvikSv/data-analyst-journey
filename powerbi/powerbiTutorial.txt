@@ -12,5 +12,9 @@ Video 4 -- PowerBI DAX (Data Analysis Expression)
 
 Use of Measure
 
+Video 5 -- Drill Down PowerBI
+
+Video 6 -- Conditional Formatting
+
 
 
